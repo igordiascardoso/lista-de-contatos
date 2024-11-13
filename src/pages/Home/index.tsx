@@ -1,21 +1,20 @@
-import { RiContactsFill, RiAddLine } from 'react-icons/ri'
-import { MdFavorite } from 'react-icons/md'
+import Footer from '../../components/Footer/Footer'
+import HeaderHome from '../../components/HeaderHome'
+import ListContacts from '../../components/ListContacts'
+import ListContactsControls from '../../components/ListContactsControls'
 
-import GuideBar from '../../components/GuideBar'
-
-import * as S from './styles'
+import { HomeContainer } from './styles'
 
 const Home = () => {
   return (
-    <S.Home>
-      <GuideBar
-        title="Meus Contatos"
-        route="/myContacts"
-        Icon={RiContactsFill}
-      />
-      <GuideBar title="Adicionar" route="/addContacts" Icon={RiAddLine} />
-      <GuideBar title="Favoritos" route="/favorites" Icon={MdFavorite} />
-    </S.Home>
+    <HomeContainer className="container">
+      <HeaderHome />
+      <main>
+        <ListContactsControls />
+        <ListContacts />
+      </main>
+      <Footer />
+    </HomeContainer>
   )
 }
 

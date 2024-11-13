@@ -1,43 +1,47 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
-import { Contact } from '../../models/Contacts'
-import { contacts } from '../../mock/index'
+import { TContact } from '../../types/Contact'
 
 type ContactsState = {
-  items: Contact[]
+  items: TContact[]
 }
-
 const initialState: ContactsState = {
-  items: contacts
+  items: []
 }
 
 const contactSlice = createSlice({
   name: 'contacts',
   initialState,
   reducers: {
-    remove: (state, action: PayloadAction<number>) => {
-      state.items = [
-        ...state.items.filter((item) => item.id !== action.payload)
-      ]
+    register: (state, action: PayloadAction<TContact>) => {
+      state.items.push({ ...action.payload })
     },
-    register: (state, action: PayloadAction<Omit<Contact, 'id'>>) => {
-      const isRegisterContact = state.items.find(
-        (item) => item.phone === action.payload.phone
-      )
 
-      if (isRegisterContact) {
-        alert('Já existe um contato registrado com esse número')
-      } else {
-        const lastContact = state.items[state.items.length - 1]
-        const newContact = {
-          ...action.payload,
-          id: lastContact ? lastContact.id + 1 : 1
-        }
-        state.items.push(newContact)
+    remove: (state, action: PayloadAction<string>) => {
+      state.items = [...state.items.filter((c) => c.id !== action.payload)]
+    },
+
+    edit: (state, action: PayloadAction<TContact>) => {
+      const indexOfContact = state.items.findIndex(
+        (t) => t.id === action.payload.id
+      )
+      if (indexOfContact >= 0) {
+        state.items[indexOfContact] = action.payload
       }
+    },
+
+    sort: (state) => {
+      state.items.sort((a, b) => {
+        if (a.firstName.toLocaleLowerCase() > b.firstName.toLocaleLowerCase()) {
+          return 1
+        }
+        if (a.firstName.toLocaleLowerCase() < b.firstName.toLocaleLowerCase()) {
+          return -1
+        }
+        return 0
+      })
     }
   }
 })
 
-export const { remove, register } = contactSlice.actions
-
+export const { register, edit, remove, sort } = contactSlice.actions
 export default contactSlice.reducer

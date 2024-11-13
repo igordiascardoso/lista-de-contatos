@@ -1,0 +1,33 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<ListContactsControls /> > should render contact order button only when items is greater than 0 1`] = `
+<div
+  class="sc-eDnVMP fXkfQf"
+>
+  <button
+    class="sc-bcPKhP sc-grXZZQ eiOZfB eCXYuZ"
+    padding="1rem 2rem"
+    title="Adicionar contato"
+    type="button"
+  >
+    <img
+      alt="Icone de mais"
+      src="/src/assets/more-icon.svg"
+    />
+    <span>
+      ADICIONAR
+    </span>
+  </button>
+  <button
+    class="sc-bcPKhP sc-grXZZQ eWKupu eCXYuZ"
+    padding=".8rem"
+    title="ordem alfabetica"
+    type="button"
+  >
+    <img
+      alt="Icon de A-Z"
+      src="/src/assets/sort-icon.svg"
+    />
+  </button>
+</div>
+`;

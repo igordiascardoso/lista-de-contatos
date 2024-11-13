@@ -1,32 +1,56 @@
-import styled, { css } from 'styled-components'
-import { Colors } from '../../styles/theme'
+import styled from 'styled-components'
+import { colors } from '../../styles'
 
 type ButtonProps = {
-  kind: 'primary' | 'second' | 'danger'
+  padding: string
 }
 
 export const Button = styled.button<ButtonProps>`
-  display: inline-flex;
-  padding: 6px 10px;
-  font-size: 14px;
-  color: ${Colors.white};
+  border: none;
   cursor: pointer;
-  border: 1px solid transparent;
-  border-radius: 4px;
+  box-shadow: 0px 2px 4px 0px rgba(100, 100, 100, 0.1);
+  color: ${colors.primary01};
+  padding: ${(props) => props.padding};
 
-  &:hover {
-    filter: brightness(80%);
+  img {
+    width: 19px;
+    height: 100%;
+  }
+`
+export const ButtonPrimaryContainer = styled(Button)`
+  background-color: transparent;
+  border: 1px solid ${colors.primary01};
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  span {
+    font-size: 1.6rem;
   }
 
-  ${(props) =>
-    props.kind === 'primary' &&
-    css`
-      background-color: ${Colors.blue150};
-    `}
+  &:disabled {
+    color: ${colors.primary03};
+    border: 1px solid ${colors.primary06};
+  }
+`
 
-  ${(props) =>
-    props.kind === 'danger' &&
-    css`
-      background-color: ${Colors.danger};
-    `}
+export const ButtonSecondaryContainer = styled(Button)`
+  background-color: ${colors.primary07};
+  border-radius: 5px;
+
+  span {
+    font-size: 1.8rem;
+  }
+`
+
+export const ButtonCircleContainer = styled(Button)`
+  border-radius: 50%;
+  background-color: ${colors.primary07};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
 `

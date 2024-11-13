@@ -1,18 +1,22 @@
-import * as S from './styles'
+import { MouseEventHandler, ReactNode } from 'react'
+import ButtonCircle from './ButtonCircle'
+import ButtonIcon from './ButtonIcon'
+import ButtonLabel from './ButtonLabel'
+import ButtonPrimary from './ButtonPrimary'
+import ButtonSecondary from './ButtonSecondary'
 
-type ButtonProps = {
-  kind: 'primary' | 'second' | 'danger'
-  title: string
-  disabled?: boolean
-  onPress?: () => void
+export type ButtonProps = {
+  children: ReactNode
+  padding: string
+  type: 'button' | 'submit'
+  onclick?: MouseEventHandler<HTMLButtonElement>
+  title?: string
 }
 
-const Button = ({ title, kind, disabled = false, onPress }: ButtonProps) => {
-  return (
-    <S.Button kind={kind} type="button" onClick={onPress} disabled={disabled}>
-      {title}
-    </S.Button>
-  )
+export const Button = {
+  Circle: ButtonCircle,
+  Primary: ButtonPrimary,
+  Secondary: ButtonSecondary,
+  Label: ButtonLabel,
+  Icon: ButtonIcon
 }
-
-export default Button

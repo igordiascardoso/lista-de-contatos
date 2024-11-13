@@ -1,0 +1,100 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<ListContacts /> > should render a paragraph if the list is empty 1`] = `
+<p
+  class="sc-ftLKQv dxDskM"
+>
+  Sua agenda está vazia, adicione novos contatos!
+</p>
+`;
+
+exports[`<ListContacts /> > should render the item in the list when it has one in the store 1`] = `
+<ul
+  class="sc-iBAaJG hLsAyM"
+>
+  <li>
+    <div
+      class="sc-eDnVMP dCSdhh"
+    >
+      <div
+        class="sc-jSwlEQ bOxcWW"
+      >
+        <div
+          class="line-deco"
+        />
+        <img
+          alt="Kamilly Silva"
+          src="/img.png"
+        />
+      </div>
+      <div
+        aria-label="contact info"
+        class="sc-gKHVLF bSyYha"
+      >
+        <h2>
+          Kamilly Silva
+        </h2>
+        <span>
+          11 99999-9999
+        </span>
+        <span>
+          exemple@gmail.com
+        </span>
+      </div>
+      <button
+        class="sc-bcPKhP sc-hLclGa kjNJwx bSMmYf"
+        padding="1.6rem"
+        title="Editar contato"
+        type="button"
+      >
+        <img
+          alt="Icone de editar"
+          src="/src/assets/edit-icon.svg"
+        />
+      </button>
+    </div>
+  </li>
+  <li>
+    <div
+      class="sc-eDnVMP dCSdhh"
+    >
+      <div
+        class="sc-jSwlEQ bOxcWW"
+      >
+        <div
+          class="line-deco"
+        />
+        <img
+          alt="Alis Silva"
+          src="/img.png"
+        />
+      </div>
+      <div
+        aria-label="contact info"
+        class="sc-gKHVLF bSyYha"
+      >
+        <h2>
+          Alis Silva
+        </h2>
+        <span>
+          11 99999-8888
+        </span>
+        <span>
+          exemple@gmail.co
+        </span>
+      </div>
+      <button
+        class="sc-bcPKhP sc-hLclGa kjNJwx bSMmYf"
+        padding="1.6rem"
+        title="Editar contato"
+        type="button"
+      >
+        <img
+          alt="Icone de editar"
+          src="/src/assets/edit-icon.svg"
+        />
+      </button>
+    </div>
+  </li>
+</ul>
+`;

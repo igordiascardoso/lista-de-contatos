@@ -1,0 +1,44 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<Contact /> > should render received props correctly 1`] = `
+<div
+  class="sc-eDnVMP dCSdhh"
+>
+  <div
+    class="sc-jSwlEQ bOxcWW"
+  >
+    <div
+      class="line-deco"
+    />
+    <img
+      alt="Kamilly Silva"
+      src="/img.png"
+    />
+  </div>
+  <div
+    aria-label="contact info"
+    class="sc-gKHVLF bSyYha"
+  >
+    <h2>
+      Kamilly Silva
+    </h2>
+    <span>
+      11 99999-9999
+    </span>
+    <span>
+      exemple@gmail.com
+    </span>
+  </div>
+  <button
+    class="sc-bcPKhP sc-hLclGa kjNJwx bSMmYf"
+    padding="1.6rem"
+    title="Editar contato"
+    type="button"
+  >
+    <img
+      alt="Icone de editar"
+      src="/src/assets/edit-icon.svg"
+    />
+  </button>
+</div>
+`;

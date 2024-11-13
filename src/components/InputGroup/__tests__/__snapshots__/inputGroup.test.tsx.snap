@@ -1,0 +1,63 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<InputGroup /> > should render correctly without error or success 1`] = `
+<div
+  aria-label="Input group"
+  class="sc-bcPKhP eBMfoZ"
+>
+  <label
+    for="name"
+  >
+    NOME
+  </label>
+  <input
+    class=""
+    id="name"
+    type="text"
+    value=""
+  />
+  <span />
+</div>
+`;
+
+exports[`<InputGroup /> > should render in success state when isSucess is true 1`] = `
+<div
+  aria-label="Input group"
+  class="sc-bcPKhP eBMfoZ"
+>
+  <label
+    for="name"
+  >
+    NOME
+  </label>
+  <input
+    class="success"
+    id="name"
+    type="text"
+    value=""
+  />
+  <span />
+</div>
+`;
+
+exports[`<InputGroup /> > should render with error when getting an error message 1`] = `
+<div
+  aria-label="Input group"
+  class="sc-bcPKhP eBMfoZ"
+>
+  <label
+    for="name"
+  >
+    NOME
+  </label>
+  <input
+    class="error"
+    id="name"
+    type="text"
+    value=""
+  />
+  <span>
+    campo obrigatório
+  </span>
+</div>
+`;

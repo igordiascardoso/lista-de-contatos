@@ -1,0 +1,255 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`<Form /> > should only render the save button on the newContact page 1`] = `
+<form
+  class="sc-gKHVLF cgYcjW"
+  data-testid="form"
+>
+  <div
+    class="sc-pqitP inGyiQ"
+  >
+    <div
+      aria-label="Input image"
+      class="sc-kDnyCx dvnzHB"
+    >
+      <input
+        accept="image/png, image/jpeg"
+        title="Adicionar foto"
+        type="file"
+      />
+      <img
+        alt="Icone de uma câmera"
+        src="/src/assets/addPhoto-icon.svg"
+      />
+    </div>
+    <span
+      class="sc-ipMvLY wVEqB"
+    >
+      Insira um nome
+    </span>
+  </div>
+  <div
+    class="sc-iBAaJG guBMRz"
+  >
+    <div>
+      <div
+        aria-label="Input group"
+        class="sc-bcPKhP eBMfoZ"
+      >
+        <label
+          for="firstName"
+        >
+          Nome
+        </label>
+        <input
+          class=""
+          id="firstName"
+          type="text"
+          value=""
+        />
+        <span />
+      </div>
+      <div
+        aria-label="Input group"
+        class="sc-bcPKhP eBMfoZ"
+      >
+        <label
+          for="lastName"
+        >
+          Sobrenome
+        </label>
+        <input
+          class=""
+          id="lastName"
+          type="text"
+          value=""
+        />
+        <span />
+      </div>
+    </div>
+    <div>
+      <div
+        aria-label="Input group"
+        class="sc-bcPKhP eBMfoZ"
+      >
+        <label
+          for="tel"
+        >
+          Telefone
+        </label>
+        <input
+          class=""
+          id="tel"
+          type="tel"
+          value=""
+        />
+        <span />
+      </div>
+      <div
+        aria-label="Input group"
+        class="sc-bcPKhP eBMfoZ"
+      >
+        <label
+          for="email"
+        >
+          Email
+        </label>
+        <input
+          class=""
+          id="email"
+          type="email"
+          value=""
+        />
+        <span />
+      </div>
+    </div>
+  </div>
+  <div
+    class="sc-ftLKQv edMseL"
+  >
+    <button
+      class="sc-grXZZQ sc-hLclGa lcpiBB hVEQyo"
+      padding="1.2rem 2.4rem"
+      title="Salvar contato"
+      type="submit"
+    >
+      <span>
+        SALVAR
+      </span>
+    </button>
+  </div>
+</form>
+`;
+
+exports[`<Form /> > should render the edit form when receiving an id props 1`] = `
+<form
+  class="sc-gKHVLF cgYcjW"
+  data-testid="form"
+>
+  <div
+    class="sc-pqitP inGyiQ"
+  >
+    <div
+      aria-label="Input image"
+      class="sc-kDnyCx dvnzHB"
+    >
+      <input
+        accept="image/png, image/jpeg"
+        title="Adicionar foto"
+        type="file"
+      />
+      <img
+        alt="Imagem de perfil"
+        class="sc-jrkPcm rBxP"
+        src="/img.png"
+      />
+    </div>
+    <span
+      class="sc-ipMvLY wVEqB"
+    >
+      Kamilly Silva
+    </span>
+  </div>
+  <div
+    class="sc-iBAaJG guBMRz"
+  >
+    <div>
+      <div
+        aria-label="Input group"
+        class="sc-bcPKhP eBMfoZ"
+      >
+        <label
+          for="firstName"
+        >
+          Nome
+        </label>
+        <input
+          class=""
+          id="firstName"
+          type="text"
+          value="Kamilly"
+        />
+        <span />
+      </div>
+      <div
+        aria-label="Input group"
+        class="sc-bcPKhP eBMfoZ"
+      >
+        <label
+          for="lastName"
+        >
+          Sobrenome
+        </label>
+        <input
+          class=""
+          id="lastName"
+          type="text"
+          value="Silva"
+        />
+        <span />
+      </div>
+    </div>
+    <div>
+      <div
+        aria-label="Input group"
+        class="sc-bcPKhP eBMfoZ"
+      >
+        <label
+          for="tel"
+        >
+          Telefone
+        </label>
+        <input
+          class=""
+          id="tel"
+          type="tel"
+          value="11 99999-9999"
+        />
+        <span />
+      </div>
+      <div
+        aria-label="Input group"
+        class="sc-bcPKhP eBMfoZ"
+      >
+        <label
+          for="email"
+        >
+          Email
+        </label>
+        <input
+          class=""
+          id="email"
+          type="email"
+          value="exemple@gmail.com"
+        />
+        <span />
+      </div>
+    </div>
+  </div>
+  <div
+    class="sc-ftLKQv edMseL"
+  >
+    <button
+      class="sc-grXZZQ sc-eDnVMP gCOyb dzJcPW"
+      padding="1.6rem"
+      title="Excluir contato"
+      type="button"
+    >
+      <img
+        alt="Icone de lixeira (excluir)"
+        src="/src/assets/trash-icon.svg"
+      />
+    </button>
+    <button
+      class="sc-grXZZQ sc-hLclGa lcpiBB hVEQyo"
+      padding="1.2rem 2.4rem"
+      title="Salvar contato"
+      type="submit"
+    >
+      <span>
+        SALVAR
+      </span>
+    </button>
+  </div>
+</form>
+`;
